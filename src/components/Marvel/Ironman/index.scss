@@ -1,0 +1,40 @@
+@import "../index.scss";
+
+#ironman {
+  background-color: $whiteColor;
+  text-align: center;
+  padding-top: 50px;
+  .container-fluid {
+    padding: 5%;
+
+    h2 {
+      font-family: $titleFont;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    h3 {
+      font-family: $titleFont;
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    .ironman-p {
+      color: #8f8f8f;
+      padding: 0 20% 0;
+    }
+
+    .ironman-m {
+      height: 70%;
+      margin: 7% 0;
+    }
+
+    .ironman-m:hover {
+      opacity: 50%;
+    }
+
+    .ironman-icon:hover {
+      color: $bgColor;
+    }
+  }
+}

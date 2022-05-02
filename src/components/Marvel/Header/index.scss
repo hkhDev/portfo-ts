@@ -1,0 +1,29 @@
+@import "../index.scss";
+
+.navbar {
+  background-color: $bgColor;
+  color: $whiteColor;
+  padding: 3% 15% 3%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: $titleFont;
+  font-weight: 400;
+}
+
+.dropdown-menu {
+  background-color: #ef8172;
+}
+
+.dropdown-item {
+  color: $whiteColor;
+  font-family: $titleFont;
+  font-weight: 400;
+}

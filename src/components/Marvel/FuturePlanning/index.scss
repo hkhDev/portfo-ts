@@ -1,0 +1,33 @@
+@import "../index.scss";
+
+#futurePlanning {
+  margin-top: 50px;
+  text-align: center;
+
+  h2 {
+    font-family: $titleFont;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 5%;
+  }
+
+  .futurePlanning-col {
+    padding: 3% 2%;
+
+    .futurePlanning-text {
+      font-family: $titleFont;
+      font-size: 1.5rem;
+      font-weight: 900;
+    }
+
+    .movie-poster {
+      width: 100%;
+      padding: 3%;
+    }
+
+    .futurePlanning-button {
+      margin: 3% 0;
+      font-size: 1.25rem;
+    }
+  }
+}

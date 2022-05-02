@@ -1,0 +1,10 @@
+@import "../index.scss";
+
+.production {
+  background-color: $secondBgColor;
+  text-align: center;
+  .production-logo {
+    width: 15%;
+    margin: 20px 40px 50px;
+  }
+}

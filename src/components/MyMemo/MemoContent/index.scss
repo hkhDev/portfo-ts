@@ -1,0 +1,62 @@
+.memo-note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+
+  h4 {
+    font-size: 0.8em;
+    margin-bottom: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+
+    .icon {
+      margin: 0 2%;
+    }
+  }
+}
+
+.ant-modal-content {
+  border-radius: 20px;
+}
+
+.ant-modal-header {
+  border-radius: 20px 20px 0 0;
+}
+
+.ant-btn:nth-child(2) {
+  background: #f5ba13;
+  border: none;
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.ant-btn:nth-child(2):hover {
+  background: #f7d26d;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1em;
+  font-family: inherit;
+  resize: none;
+}

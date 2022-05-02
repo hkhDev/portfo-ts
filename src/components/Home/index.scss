@@ -1,0 +1,111 @@
+.home-body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #535353;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+  padding: 1rem;
+  color: #f8f8f8;
+  min-height: 100vh;
+  .home-container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    height: inherit;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 1rem;
+
+    .h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.5;
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .h3 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+
+    .home-logo-1 {
+      width: 50%;
+      margin: 1rem 0;
+    }
+
+    .home-logo-2 {
+      width: 30%;
+      margin: 1rem 0;
+    }
+
+    .home-logo-3 {
+      width: 30%;
+      margin: 2rem 1rem;
+      border-radius: 10px;
+    }
+
+    .home-link {
+      position: relative;
+      background-color: black;
+      /* background-image: linear-gradient(140deg, black, white); */
+      border: none;
+      width: 70%;
+      margin: 0.5rem 0;
+      border-radius: 20px;
+      transition: all 0.5s;
+      overflow: hidden;
+      z-index: 1;
+      -webkit-transition: color 100ms ease-in-out;
+      transition: color 100ms ease-in-out;
+    }
+
+    .home-link:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 0;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.781);
+      z-index: -1;
+      -webkit-transition: width 200ms ease-in-out;
+      transition: width 200ms ease-in-out;
+    }
+
+    .home-link:hover {
+      color: black;
+    }
+    .home-link:hover:after {
+      width: 110%;
+    }
+
+    .home-link span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .home-link span:after {
+      content: "\00bb";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .home-link:hover span {
+      padding-right: 25px;
+    }
+
+    .home-link:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  }
+}

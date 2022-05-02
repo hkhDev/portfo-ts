@@ -1,0 +1,18 @@
+@import "../index.scss";
+
+#avengers {
+  background-color: $secondBgColor;
+  color: $whiteColor;
+  padding: 5% 15%;
+  text-align: center;
+  h2 {
+    font-family: $titleFont;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 5%;
+  }
+  .avengers-image {
+    width: 80%;
+    margin: 20px;
+  }
+}
