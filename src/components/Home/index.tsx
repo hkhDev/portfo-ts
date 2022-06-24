@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
@@ -12,8 +11,8 @@ function Home() {
           src="images/html_css_js_logo.png"
           alt="html-css-js-logo"
         />
-        <h3>HTML, CSS and Javascript</h3>
-        <Link to="/marvel">
+        <h3>HTML, CSS and JavaScript</h3>
+        <Link to="/Harris-portfo/marvel">
           <div className="btn btn-dark home-link">
             <span>Marvel Museum</span>
           </div>
@@ -25,15 +24,27 @@ function Home() {
           alt="react-logo"
         />
         <h3>React Application</h3>
-        <Link to="/MyMemo">
+        <Link to="/Harris-portfo/MyMemo">
           <div className="btn btn-dark home-link">
             <span>My Memo</span>
           </div>
         </Link>
         <br />
-        <Link to="/todolist">
+        <Link to="/Harris-portfo/todolist">
           <div className="btn btn-dark home-link">
             <span>To-Do-List</span>
+          </div>
+        </Link>
+        <br />
+        <img
+          className="home-logo-2"
+          src="https://cdn-icons-png.flaticon.com/512/344/344389.png"
+          alt="react-logo"
+        />
+        <h3>Restful API Application</h3>
+        <Link to="/Harris-portfo/moviesearch">
+          <div className="btn btn-dark home-link">
+            <span>Movie Search</span>
           </div>
         </Link>
         <br />

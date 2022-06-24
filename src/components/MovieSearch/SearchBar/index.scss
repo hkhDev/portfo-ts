@@ -1,0 +1,37 @@
+@import "../index.scss";
+
+.form-body {
+  background-image: url("https://newsstatic.rthk.hk/images/mfile_1644653_1_L_20220419154427.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    font-family: $titleFont;
+  }
+  .form-content {
+    margin: 0 30% 0;
+    padding-top: 10px;
+    .form-input {
+      border-radius: 0px;
+    }
+    .form-title-error-msg {
+      color: red;
+      position: absolute;
+    }
+    .form-type,
+    .form-year {
+      margin: 10% 0;
+      .form-filter-label {
+        color: white;
+      }
+    }
+    .form-button {
+      border-radius: 0;
+    }
+  }
+}

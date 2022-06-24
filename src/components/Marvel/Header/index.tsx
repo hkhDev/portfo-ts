@@ -4,7 +4,7 @@ import "./index.scss";
 function Header() {
   return (
     <div>
-      <Navbar className="navbar" variant="dark" expand="lg">
+      <Navbar className="marvel-navbar" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand href="/">KaHo</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

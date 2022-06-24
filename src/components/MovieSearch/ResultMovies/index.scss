@@ -1,0 +1,27 @@
+@import "../index.scss";
+
+.movie-body {
+  text-align: center;
+  padding: 1.5rem 30%;
+  .movie-poster {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-family: $titleFont;
+    font-weight: bold;
+  }
+}
+.page-number {
+  .pagination {
+    justify-content: center;
+  }
+  // .page-input {
+  //   width: 2rem;
+  //   text-align: center;
+  // }
+}

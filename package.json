@@ -1,6 +1,6 @@
 {
   "name": "portfo-ts",
-  "homepage": "http://hkhDev.github.io",
+  "homepage": "http://hkhDev.github.io/Harris-portfo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "antd": "^4.18.3",
+    "axios": "^0.27.2",
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.0",

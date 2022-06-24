@@ -1,0 +1,10 @@
+@import "../index.scss";
+
+.navbar {
+  h2 {
+    padding: 1rem 10%;
+    letter-spacing: 8px;
+    margin-bottom: 0 !important;
+    font-family: $titleFont;
+  }
+}
