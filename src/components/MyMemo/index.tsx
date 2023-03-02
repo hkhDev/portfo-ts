@@ -31,7 +31,7 @@ function MyMemo() {
   return (
     <div className="memo-body">
       <header>
-        <h1>KaHo's Memo</h1>
+        <h1>Harris's Memo</h1>
       </header>
       <CreateArea addNote={addNote} />
       {Notes.map((note: INote, index) => (

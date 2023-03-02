@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import Marvel from "./Marvel";
 import MyMemo from "./MyMemo";
@@ -12,12 +13,12 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/Harris-portfo" element={<Home />} />
-          <Route path="/Harris-portfo/marvel" element={<Marvel />} />
-          <Route path="/Harris-portfo/mymemo" element={<MyMemo />} />
-          <Route path="/Harris-portfo/todolist" element={<ToDoList />} />
-          <Route path="/Harris-portfo/moviesearch" element={<MovieSearch />} />
-          <Route path="/Harris-portfo/*" element={<PageNotFound />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/marvel" element={<Marvel />} />
+          <Route path="/mymemo" element={<MyMemo />} />
+          <Route path="/todolist" element={<ToDoList />} />
+          <Route path="/moviesearch" element={<MovieSearch />} />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </Router>
       <Footer />

@@ -10,8 +10,9 @@ function Ironman() {
       <Container fluid>
         <h2>Phylogeny of Iron Man</h2>
         <Row>
-          {ironmanList.map((ironman) => (
+          {ironmanList.map((ironman, index) => (
             <Grid
+              key={index}
               name={ironman.name}
               content={ironman.content}
               image={ironman.image}

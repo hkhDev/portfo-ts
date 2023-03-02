@@ -14,8 +14,8 @@ function Avengers() {
     <div id="avengers">
       <h2>Avengers</h2>
       <Carousel activeIndex={index} onSelect={handleSelect}>
-        {avengersList.map((avenger) => (
-          <Carousel.Item>
+        {avengersList.map((avenger, index) => (
+          <Carousel.Item key={index}>
             <img
               className="d-block w-100"
               src={avenger.img}

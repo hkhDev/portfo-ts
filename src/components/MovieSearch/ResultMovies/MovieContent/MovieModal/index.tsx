@@ -38,21 +38,25 @@ function renderRating(movieRatings: any) {
           {movieRatings !== undefined && (
             <>
               <tr>
-                {movieRatings.map((rate: { Source: string; Value: String }) => (
-                  <td className="rating-icon-td">
-                    <img
-                      className="rating-icon"
-                      src={ratingListLogo[ratingList.indexOf(rate.Source)]}
-                    />
-                  </td>
-                ))}
+                {movieRatings.map(
+                  (rate: { Source: string; Value: String }, index: number) => (
+                    <td className="rating-icon-td" key={index}>
+                      <img
+                        className="rating-icon"
+                        src={ratingListLogo[ratingList.indexOf(rate.Source)]}
+                      />
+                    </td>
+                  )
+                )}
               </tr>
               <tr>
-                {movieRatings.map((rate: { Source: string; Value: String }) => (
-                  <td className="rating-value">
-                    <strong>{rate.Value}</strong>
-                  </td>
-                ))}
+                {movieRatings.map(
+                  (rate: { Source: string; Value: String }, index: number) => (
+                    <td className="rating-value" key={index}>
+                      <strong>{rate.Value}</strong>
+                    </td>
+                  )
+                )}
               </tr>
             </>
           )}
@@ -105,9 +109,10 @@ function MovieModal(props: IProps) {
                   <tr>
                     <td colSpan={2}>
                       <strong>{props.movie.Plot}</strong>
+                      <br />
                     </td>
                   </tr>
-                  <br />
+
                   <tr>
                     <td>
                       <strong>Director</strong>

@@ -9,7 +9,7 @@ function InputArea(props: IProp) {
 
   function handleChange(event: { target: { value: string } }) {
     const newValue = event.target.value;
-    console.log(newValue);
+    // console.log(newValue);
     setInputText(newValue);
     // Store the input
   }

@@ -12,6 +12,7 @@ function FuturePlanning() {
         <Row>
           {moviesList.map((movie, index) => (
             <Movies
+              key={index}
               name={movie.name}
               img={movie.img}
               imgName={movie.imgName}

@@ -10,9 +10,7 @@ function Header() {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            <Link to="/Harris-portfo">
-              More Apps <i className="fas fa-angle-double-right"></i>
-            </Link>
+            <Link to="/">More Apps</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

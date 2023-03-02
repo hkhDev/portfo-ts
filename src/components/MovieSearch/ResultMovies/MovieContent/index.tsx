@@ -22,7 +22,7 @@ function MovieContent(props: IProp) {
         },
       })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setMovie(res.data);
         setModalShow(true);
       })

@@ -42,9 +42,9 @@ function App() {
         },
       })
       .then((res) => {
-        console.log(res);
-        console.log("Result: ");
-        console.log(res.data);
+        // console.log(res);
+        // console.log("Result: ");
+        // console.log(res.data);
         setMovies(res.data);
         setIsLoading(false);
       })

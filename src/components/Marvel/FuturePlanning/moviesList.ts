@@ -1,30 +1,29 @@
 const moviesList = [
   {
-    name: "Doctor Strange 2",
-    img: "https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
-    imgName: "Doctor Strange 2 poster",
-    date: "May 5",
-    link: "https://www.cineplex.com/Movie/doctor-strange-in-the-multiverse-of-madness?utm_medium=search_paid&utm_source=google&utm_campaign=cpx_doctor-strange-2_en&gclid=Cj0KCQjw37iTBhCWARIsACBt1IyJBFhCHFDTr2GoHqSHSGhJieKYtyvzT705xiHLg8tRafAV1-kWIHEaAighEALw_wcB&gclsrc=aw.ds",
+    name: "Ant-Man and the Wasp: Quantumania",
+    img: "https://terrigen-cdn-dev.marvel.com/content/prod/1x/amtwqm_family_payoff2_1-sht_v4_lg.jpg",
+    imgName: "Ant-Man and the Wasp: Quantumania Poster",
+    date: "Feb 17",
+    link: "https://www.cineplex.com/movie/antman-and-the-wasp-quantumania",
     showing: true,
   },
   {
-    name: "Ms Marvel",
-    img: "https://m.media-amazon.com/images/M/MV5BYmRiMjZhOWItMDQwMi00ZmM1LTg3YzctODZhMzc3Nzk1NjU5XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
-    imgName: "Ms Marvel poster",
-    date: "June 8",
-    link: "https://www.youtube.com/watch?v=m9EX0f6V11Y",
-    className: "price-btn btn btn-lg btn-outline-danger",
+    name: "Guardians of the Galaxy Vol. 3",
+    img: "https://upload.wikimedia.org/wikipedia/zh/3/30/Guardians_of_the_Galaxy_Vol_3_poster.jpg",
+    imgName: "I Am Groot Poster",
+    date: "May 5",
+    link: "https://www.youtube.com/watch?v=u3V5KDHRQvk",
     showing: false,
   },
-  {
-    name: "Thor: Love and Thunder",
-    img: "https://p3.toutiaoimg.com/origin/tos-cn-i-tjoges91tu/T3bjihoH94gX8Y?from=pc",
-    imgName: "Thor: Love and Thunder Poster",
-    date: "July 8",
-    link: "https://www.youtube.com/watch?v=tgB1wUcmbbw",
-    showing: false,
-  },
-  
+  // {
+  //   name: "She-Hulk: Attorney at Law",
+  //   img: "https://pbs.twimg.com/media/FYZCuObVQAEEu19?format=jpg&name=4096x4096",
+  //   imgName: "She-Hulk: Attorney at Law poster",
+  //   date: "August 17",
+  //   link: "https://www.youtube.com/watch?v=u7JsKhI2An0",
+  //   // className: "price-btn btn btn-lg btn-outline-danger",
+  //   showing: false,
+  // },
 ];
 
 export default moviesList;
