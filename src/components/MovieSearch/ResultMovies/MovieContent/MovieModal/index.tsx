@@ -44,6 +44,7 @@ function renderRating(movieRatings: any) {
                       <img
                         className="rating-icon"
                         src={ratingListLogo[ratingList.indexOf(rate.Source)]}
+                        alt="rating-icon"
                       />
                     </td>
                   )

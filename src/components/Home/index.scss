@@ -1,20 +1,9 @@
 .home-body {
   font-family: "Montserrat", sans-serif;
-  text-align: center;
-  // background-color: #535353;
-  // background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
-  padding: 1rem;
-  // color: #f8f8f8;
   min-height: 100vh;
-  .card {
-    margin: 3rem auto;
-    width: 50%;
-    text-align: center;
-    .card-title {
-      margin: 2rem 0;
-      font-size: 2rem;
-    }
-  }
+  background-color: rgba(33, 37, 41);
+  color: white;
+
   .home-container {
     width: 100%;
     height: auto;
@@ -22,13 +11,15 @@
     height: inherit;
     // max-width: 600px;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1rem 5rem;
 
     h2 {
       font-size: 2.5rem;
       font-weight: 900;
       line-height: 1.5;
       margin-bottom: 1rem;
+      color: white;
+      text-decoration: underline;
     }
 
     h3 {
@@ -36,102 +27,107 @@
       font-weight: 900;
       line-height: 1.5;
     }
-
-    .home-logo-1 {
-      width: 50%;
-      margin: 1rem 0;
-    }
-
-    .home-logo-2 {
-      width: 30%;
-      margin: 1rem 0;
-    }
-
-    .home-logo-3 {
-      width: 30%;
+    .card {
+      background-color: black;
       margin: 2rem 1rem;
-      border-radius: 10px;
+      // width: 50%;
+      text-align: center;
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+      .card-title {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+      }
+      .card-skill {
+        margin-bottom: 1rem;
+      }
+      .card-link {
+        color: white;
+        font-size: 1rem;
+      }
     }
-
-    .home-link {
-      // text-decoration: none;
-      color: black;
-      font-size: 1rem;
-      // position: relative;
-      // background-color: black;
-      // /* background-image: linear-gradient(140deg, black, white); */
-      // border: none;
-      // width: 70%;
-      // margin: 0.5rem 0;
-      // border-radius: 20px;
-      // transition: all 0.5s;
-      // overflow: hidden;
-      // z-index: 1;
-      // -webkit-transition: color 100ms ease-in-out;
-      // transition: color 100ms ease-in-out;
+    .home-intro {
+      padding-top: 3rem;
+      .home-intro-left {
+        margin: auto;
+        .home-intro-title {
+          font-size: 2rem;
+        }
+        .home-intro-decription {
+          margin-top: 2rem;
+        }
+      }
     }
-
-    .home-link:after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      width: 0;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.781);
-      z-index: -1;
-      -webkit-transition: width 200ms ease-in-out;
-      transition: width 200ms ease-in-out;
+    .home-skill {
+      .home-skill-card {
+        transition: all 0.3s ease-in-out;
+      }
+      .home-skill-card:hover {
+        transform: scale(1.1);
+      }
+      .html-card {
+        box-shadow: 0px 0px 10px 3px rgb(255, 160, 51);
+      }
+      .css-card {
+        box-shadow: 0px 0px 10px 3px rgb(51, 194, 255);
+      }
+      .scss-card {
+        box-shadow: 0px 0px 10px 3px rgb(247, 141, 233);
+      }
+      .js-card {
+        box-shadow: 0px 0px 10px 3px rgb(251, 255, 0);
+      }
+      .ts-card {
+        box-shadow: 0px 0px 10px 3px rgb(51, 54, 255);
+      }
+      .react-card {
+        box-shadow: 0px 0px 10px 3px rgb(51, 235, 255);
+      }
+      .node-card {
+        box-shadow: 0px 0px 10px 3px rgb(116, 255, 51);
+      }
+      .git-card {
+        box-shadow: 0px 0px 10px 3px rgb(255, 255, 255);
+      }
+      .mongodb-card {
+        box-shadow: 0px 0px 10px 3px rgb(0, 109, 7);
+      }
+      .mysql-card {
+        box-shadow: 0px 0px 10px 3px rgb(12, 73, 131);
+      }
+      .home-skill-img {
+        height: 5rem;
+        width: auto;
+        margin: 1rem auto;
+      }
     }
-
-    .home-link:hover {
-      color: black;
-    }
-    .home-link:hover:after {
-      width: 110%;
-    }
-
-    .home-link span {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      transition: 0.5s;
-    }
-
-    .home-link span:after {
-      content: "\00bb";
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -20px;
-      transition: 0.5s;
-    }
-
-    .home-link:hover span {
-      padding-right: 25px;
-    }
-
-    .home-link:hover span:after {
-      opacity: 1;
-      right: 0;
+    .home-porto {
+      padding-top: 3rem;
     }
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .card {
-    width: 75% !important;
-    .card-title {
-      font-size: 3rem !important;
+  .home-container {
+    padding: 0.5rem !important;
+    text-align: center;
+    .home-intro-left {
+      margin-bottom: 1rem !important;
     }
-    .card-text {
-      font-size: 2rem !important;
+    .home-intro-right {
+      padding: 2rem 4rem;
     }
-    .home-link {
-      font-size: 1.8rem !important;
+    .card {
+      width: 75% !important;
+      margin: 1rem auto !important;
+      .card-title {
+        font-size: 1.5rem !important;
+      }
+      .card-text {
+        font-size: 2rem !important;
+      }
+      .home-link {
+        font-size: 1.2rem !important;
+      }
     }
   }
 }

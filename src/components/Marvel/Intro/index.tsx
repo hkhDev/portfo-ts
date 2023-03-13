@@ -23,7 +23,7 @@ function Intro() {
               <Col xs="3">
                 <img
                   className="avengers-btn-img marvel-game-btn-img"
-                  src="images/avengers-icon.png"
+                  src="images/marvel/avengers-icon.png"
                   alt="avengers-icon"
                 />
               </Col>
@@ -42,7 +42,7 @@ function Intro() {
               <Col xs="4">
                 <img
                   className="ulton-btn-img marvel-game-btn-img"
-                  src="images/ulton.png"
+                  src="images/marvel/ulton.png"
                   alt="ultron"
                 />
               </Col>
@@ -57,7 +57,7 @@ function Intro() {
       <Col lg="6">
         <img
           className="ironman1"
-          src="images/ironman1.png"
+          src="images/marvel/ironman1.png"
           alt="ironman wallpaper"
         />
       </Col>

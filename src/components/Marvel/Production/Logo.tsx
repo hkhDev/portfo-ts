@@ -9,7 +9,7 @@ function Logo(props: IProp) {
   return (
     <img
       className="production-logo"
-      src={"images/" + props.img}
+      src={"images/marvel/" + props.img}
       alt={props.name}
     />
   );

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 interface IProp {
   text: string;
@@ -20,14 +22,13 @@ function ToDoItem(props: IProp) {
         <span onClick={checkedItem} className={checked ? "todo-crossItem" : ""}>
           {props.text}
         </span>
-        <img
-          className="todo-img"
-          src="images/rubbish_bin.png"
+        <FontAwesomeIcon
+          icon={faTrash}
           onClick={() => {
             props.handleDelete(props.id);
           }}
-          alt="delete-button"
-        ></img>
+          className="todo-img"
+        />
       </li>
     </div>
   );

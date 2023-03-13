@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Spinner, Pagination } from "react-bootstrap";
 import "./index.scss";
 import MovieContent from "./MovieContent";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import MovieModal from "./MovieModal";
 
 interface IProp {

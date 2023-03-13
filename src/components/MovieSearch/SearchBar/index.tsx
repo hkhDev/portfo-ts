@@ -6,7 +6,6 @@ import {
   Row,
   Col,
   FloatingLabel,
-  Fade,
 } from "react-bootstrap";
 import "./index.scss";
 
