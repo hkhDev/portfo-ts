@@ -15,6 +15,7 @@ import "./index.scss";
 import "./portfos";
 import portfos from "./portfos";
 import skills from "./skills";
+import ContactForm from "./ContactForm";
 
 function Home() {
   const [animationOneStatus, setanimationOneStatus] = useState(false);
@@ -193,6 +194,8 @@ function Home() {
           </Row>
           {/* </Container> */}
         </div>
+
+        <ContactForm></ContactForm>
       </Container>
     </div>
   );
