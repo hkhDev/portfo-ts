@@ -55,14 +55,14 @@ function Home() {
               <Nav.Link href="#">Home</Nav.Link>
               <Nav.Link href="#about">About</Nav.Link>
               <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="#experience">Experience</Nav.Link>
+              <Nav.Link href="#skills">Skills</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
 
-      <Container className="home-container" id="about">
-        <div className="home-intro">
+      <Container className="home-container">
+        <div className="home-intro" id="about">
           <Row>
             <Col lg="8" className="home-intro-left">
               <TypeAnimation
@@ -120,25 +120,6 @@ function Home() {
           </Row>
         </div>
 
-        <div className="home-skill">
-          <h2>Skills</h2>
-          <Row>
-            {skills.map((skill, index) => {
-              return (
-                <Col xl="3" lg="4" xs="6">
-                  <Card
-                    style={{ width: "15rem" }}
-                    className={skill.className + " home-skill-card"}
-                  >
-                    <Card.Img src={skill.img} className="home-skill-img" />
-                    <p>{skill.name}</p>
-                  </Card>
-                </Col>
-              );
-            })}
-          </Row>
-        </div>
-
         <div id="portfolio" className="home-porto">
           <h2>Portfolio</h2>
           <Row>
@@ -193,6 +174,25 @@ function Home() {
             })}
           </Row>
           {/* </Container> */}
+        </div>
+
+        <div className="home-skill" id="skills">
+          <h2>Skills</h2>
+          <Row>
+            {skills.map((skill, index) => {
+              return (
+                <Col xl="3" lg="4" xs="6">
+                  <Card
+                    style={{ width: "15rem" }}
+                    className={skill.className + " home-skill-card"}
+                  >
+                    <Card.Img src={skill.img} className="home-skill-img" />
+                    <p>{skill.name}</p>
+                  </Card>
+                </Col>
+              );
+            })}
+          </Row>
         </div>
 
         <ContactForm></ContactForm>
