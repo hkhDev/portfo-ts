@@ -1,21 +1,33 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Toast from "react-bootstrap/Toast";
 import ToastContainer from "react-bootstrap/ToastContainer";
+import { Fade, AttentionSeeker } from "react-awesome-reveal";
 
 const ContactForm = () => {
+  const [validated, setValidated] = useState<boolean>(false);
   const [toastShow, setToastShow] = useState<boolean>(false);
   const form: any = useRef();
+
+  const handleSubmit = (e: any) => {
+    const form = e.currentTarget;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+    } else {
+      sendEmail(e);
+    }
+    setValidated(true);
+  };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
     // setToastShow(true);
-
+    // setValidated(false);
+    console.log("sent");
     emailjs
       .sendForm(
         "service_ir3vgy5",
@@ -27,6 +39,7 @@ const ContactForm = () => {
         (result) => {
           e.target.reset();
           setToastShow(true);
+          setValidated(false);
         },
         (error) => {
           console.log(error.text);
@@ -35,77 +48,74 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="home-form">
+    <div className="home-form" id="contact">
       <Row>
         <Col>
-          <h2>Inbox Me!</h2>
-          <p>
-            I'd love if you reached out to me. Drop me a message and I will get
-            back to you soon. It is ok even if you just want to say Hi. We all
-            love make friends :&#41;
-          </p>
+          <Fade direction="left" triggerOnce>
+            <AttentionSeeker effect="bounce">
+              <h2>Inbox Me!</h2>
+            </AttentionSeeker>
+            <p>
+              I'd love if you reached out to me. Drop me a message and I will
+              get back to you soon. It is ok even if you just want to say Hi. We
+              all love making friends :&#41;
+            </p>
+          </Fade>
         </Col>
         <Col lg="8">
-          {/* <h2>Inbox Me!</h2>
-          <p>
-            I'd love if you reached out to me. Drop me a message and I will get
-            back to you soon.
-          </p> */}
-          <Form ref={form} onSubmit={sendEmail}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control
-                type="text"
-                placeholder="Enter your name"
-                name="name"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control
-                type="email"
-                placeholder="Enter your Email"
-                name="email"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Control
-                as="textarea"
-                aria-label="With textarea"
-                placeholder="Enter your message"
-                name="message"
-              />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+          <Form
+            noValidate
+            validated={validated}
+            ref={form}
+            onSubmit={handleSubmit}
+          >
+            <Fade direction="right" triggerOnce>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control
+                  type="text"
+                  placeholder="Enter your name"
+                  name="name"
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Control
+                  type="email"
+                  placeholder="Enter your Email"
+                  name="email"
+                  required
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Control
+                  as="textarea"
+                  aria-label="With textarea"
+                  placeholder="Enter your message"
+                  name="message"
+                  required
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Fade>
           </Form>
-          <ToastContainer position="bottom-start" className="position-fixed">
-            <Toast
-              bg="success"
-              onClose={() => setToastShow(false)}
-              show={toastShow}
-              delay={3000}
-              autohide
-            >
-              {/* <Toast.Header>
-            <strong className="me-auto">Sumitted</strong>
-          </Toast.Header> */}
-              <Toast.Body>Message Sent</Toast.Body>
-            </Toast>
-          </ToastContainer>
         </Col>
-        {/* <Col></Col> */}
+        <ToastContainer position="bottom-start" className="position-fixed">
+          <Toast
+            bg="success"
+            onClose={() => setToastShow(false)}
+            show={toastShow}
+            delay={500}
+            autohide
+          >
+            <Toast.Header>
+              <strong className="me-auto toast-body">Message Sent</strong>
+            </Toast.Header>
+          </Toast>
+        </ToastContainer>
       </Row>
     </div>
-
-    // <form ref={form} onSubmit={sendEmail}>
-    //   <label>Name</label>
-    //   <input type="text" name="from_name" />
-    //   <label>Email</label>
-    //   <input type="email" name="from_email" />
-    //   <label>Message</label>
-    //   <textarea name="message" />
-    //   <input type="submit" value="Send" />
-    // </form>
   );
 };
 
